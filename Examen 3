@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    printf("De cuantos niveles quiere la piramide: ");
+    scanf("%d", &x);
+
+    if (x <= 60) {
+        for (int i = 1; i <= x; i++) {
+            for (int k = 1; k <= i; k++) {
+                printf("%d", k);
+            }
+            printf("\n");
+        }
+    } else {
+        printf("El numero que proporciono es muy grande\n");
+    }
+
+    return 0;
+}
