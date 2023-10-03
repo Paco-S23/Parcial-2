@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    for (int num = 1; num <= 100; num++) {
+        printf("Numero %d ", num);
+
+        if (num % 3 == 0) {
+            printf("es multiplo de 3\n");
+        } else {
+            printf("no es multiplo de 3\n");
+        }
+    }
+
+    return 0;
+}
