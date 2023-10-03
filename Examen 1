@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    
+    int r1, r2, r3;
+    float res;
+    
+    do {
+        r1 = rand() % 5 + 1; 
+        
+        if (r1 == 1) {
+        	
+            r2 = rand() % 100 + 1;
+            r3 = rand() % 100 + 1;
+            res = r2 + r3;
+            
+            printf("Numero 1: %d\n", r2);
+            printf("Numero 2: %d\n", r3);
+            
+            printf("\nLa suma de los 2 numeros es: %.02f\n", res);
+            
+        } else if (r1 == 2) {
+        	
+            r2 = rand() % 100 + 1;
+            r3 = rand() % 100 + 1;
+            res = r2 - r3;
+            
+            printf("Numero 1: %d\n", r2);
+            printf("Numero 2: %d\n", r3);
+            
+            printf("\nLa resta de los 2 numeros es: %.02f\n", res);
+            
+        } else if (r1 == 3) {
+        	
+            r2 = rand() % 100 + 1;
+            r3 = rand() % 100 + 1;
+            res = r2 * r3;
+            
+            printf("Numero 1: %d\n", r2);
+            printf("Numero 2: %d\n", r3);
+            
+            printf("\nLa multiplicacion de los 2 numeros es: %.02f\n", res);
+            
+        } else if (r1 == 4) {
+        
+            r2 = rand() % 100 + 1;
+            r3 = rand() % 100 + 1;
+            
+            if (r3 == 0) {
+            	
+                printf("\nNo se puede dividir por cero.\n");
+                
+            } else {
+            	
+                res = (float)r2 / r3; 
+                printf("Numero 1: %d\n", r2);
+                printf("Numero 2: %d\n", r3);
+                printf("\nLa division de los 2 numeros es: %.02f\n", res);
+                
+            }
+        } else if (r1 == 5) {
+        	
+            printf("\nPrograma terminado\n");
+        }
+    } while (r1 < 5);
+    
+    return 0;
+}
