@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Multiplos de 3
+
 int main() {
     for (int num = 1; num <= 100; num++) {
         printf("Numero %d ", num);
