@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//Piramide
+
 int main() {
     int x;
 
